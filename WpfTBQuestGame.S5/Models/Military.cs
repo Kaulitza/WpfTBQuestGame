@@ -20,7 +20,6 @@ namespace WpfTheAionProject.Models
         //public Potion CurrentPotion { get; set; }
         //public Treasure CurrentTreasure { get; set; }
 
-
         protected override string InformationText()
         {
             return $"{Name} - {Description}";
@@ -133,8 +132,6 @@ namespace WpfTheAionProject.Models
                 return 100;
             }
         }
-
         #endregion
-
     }
 }

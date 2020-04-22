@@ -262,7 +262,6 @@ namespace WpfTheAionProject.Models
             }
         }
 
-
         public void UpdateMissionStatus()
         {
             // // Note: only loop through assigned missions and cast mission to proper child class 7/ 

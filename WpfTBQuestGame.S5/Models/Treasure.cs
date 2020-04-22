@@ -15,7 +15,7 @@ namespace WpfTheAionProject.Models
             Gold,
             Diamond,
             Silver,
-            Brinze
+            Bronze
         }
         public Treasure(int id, string name, int value, TreasureType type, string description, int experiencePoints)
             : base(id, name, value, description, experiencePoints)

@@ -61,13 +61,6 @@ namespace WpfTheAionProject.Models
             set { _house = value;
                 OnPropertyChanged(nameof(House));
                 OnPropertyChanged(nameof(_house)); }
-        }
-        //public abstract void functionAbstract();
-        //public virtual void functionVirtual()
-        //{
-
-        //}
-
-        
+        }      
     }
 }

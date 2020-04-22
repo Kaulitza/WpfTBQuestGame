@@ -66,6 +66,5 @@ namespace WpfTheAionProject.BusinessLayer
                 _player = GameData.PlayerData();
             }
         }
-
     }
 }

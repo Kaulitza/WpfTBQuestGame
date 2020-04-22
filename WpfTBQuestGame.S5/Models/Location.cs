@@ -9,8 +9,6 @@ namespace WpfTheAionProject.Models
 {
     public class Location:ObservableObject
     {
-
-
         int _id; public int id { get { return _id; } set { _id = value; } }
         string _name; public string name { get { return _name; } set { _name = value; } }
         string _description; public string description { get { return _description; } set { _description = value; } }
@@ -30,11 +28,6 @@ namespace WpfTheAionProject.Models
         int _requiredExperientsPoints; public int requiredExperientsPoints { get { return _requiredExperientsPoints; } set { _requiredExperientsPoints = value; } }
         private ObservableCollection<GameItemQuantity> _gameItems; public ObservableCollection<GameItemQuantity> GameItems { get { return _gameItems; }set { _gameItems = value; } }
         private int _requiredRelicid;public int RequiredRelicid { get { return _requiredRelicid; } set { _requiredRelicid = value; } }
-        //public Location(int _id, string _name, string _description, Boolean _accessible)
-        //{
-        //    this._id = _id; this._name = _name;this._description = _description;this._accessible = _accessible;
-        //}
-
       
         public ObservableCollection<Npc> Npcs
         {
@@ -61,11 +54,6 @@ namespace WpfTheAionProject.Models
         {
 
         }
-
-       
-
-
-
         public void UpdateLocationGameItems()
         {
             ObservableCollection<GameItemQuantity> updatedLocationGameItems = new ObservableCollection<GameItemQuantity>();
@@ -123,7 +111,6 @@ namespace WpfTheAionProject.Models
                     gameItemQuantity.Quantity--;
                 }
             }
-
             UpdateLocationGameItems();
         }
         public bool IsAccessibleByExperiencePoints(int playerExperiencePoints)

@@ -210,8 +210,6 @@ namespace WpfTheAionProject.PresentationLayer
         #endregion
 
         #region METHODS
-
-
         private void InitializeView()
         {
             UpdateAvailableTravelPoints();
@@ -273,37 +271,6 @@ namespace WpfTheAionProject.PresentationLayer
             _player.UpdateMissionStatus();
         }
 
-        public void OnUseGameItem()
-        {
-
-
-            if (_currentGameItem is Potion)
-            {
-                // ProcessPotionUse(potion);
-            }
-            else if (_currentGameItem is Allies)
-            {
-                // ProcessRelicUse(relic);
-            }
-        }
-
-        private void processrelicuse(Allies allies)
-        {
-            //string message;
-            //switch (allies.UseAction)
-            //{
-            //    case allies.use.openlocation:
-            //        message = _gamemap.openlocationbyrelic(relic.id);
-            //        currentlocationname = relic.usemessage;
-            //        break;
-            //    case allies.useactiontype.killplayer:
-            //        playerdies(relic.usemessage);
-            //        break;
-            //    default:
-            //        break;
-            //}
-        }
-
         private void OnPlayerDies(string message)
         {
             string messagetext = message + "\n\n Would you like to play again ";
@@ -331,10 +298,7 @@ namespace WpfTheAionProject.PresentationLayer
         public void ResetPlayer()
         {
             Environment.Exit(0);
-
-
         }
-
 
         private void ProcessPotionUse(Potion potion)
         {
@@ -342,8 +306,7 @@ namespace WpfTheAionProject.PresentationLayer
             _player.Lives += potion.LivesChange;
             _player.RemoveGameItemQuantityFromInventory(_currentGameItem);
         }
-
-
+        
         private void UpdateAvailableTravelPoints()
         {
             //
@@ -859,7 +822,6 @@ namespace WpfTheAionProject.PresentationLayer
             return StandardGameItems().FirstOrDefault(i => i.id == id);
         }
 
-
         private string GenerateMissionTravelDetail(MissionTravel mission)
         {
             StringBuilder sb = new StringBuilder();
@@ -878,7 +840,6 @@ namespace WpfTheAionProject.PresentationLayer
                     sb.AppendLine(TAB + location.name);
                 }
             }
-
             sb.Remove(sb.Length - 2, 2);
 
             return sb.ToString();

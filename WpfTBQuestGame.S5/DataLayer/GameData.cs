@@ -84,7 +84,6 @@ namespace WpfTheAionProject.DataLayer
                     NpcById(2002),
                     NpcById(2003)
                 }
-                
             };
             gameMap.MapLocation[0, 1] = new Location()
             {
@@ -101,7 +100,6 @@ namespace WpfTheAionProject.DataLayer
                     new GameItemQuantity(GameItemById(1001),1),
                                         new GameItemQuantity(GameItemById(3001),1),
                                                                                 new GameItemQuantity(GameItemById(4001),200)
-
                 },
                 Npcs = new ObservableCollection<Npc>()
                 {
@@ -110,6 +108,7 @@ namespace WpfTheAionProject.DataLayer
                     NpcById(2003)
                 }
             };
+
             gameMap.MapLocation[0, 2] = new Location()
             {
                 id = 02,
@@ -125,7 +124,6 @@ namespace WpfTheAionProject.DataLayer
                     new GameItemQuantity(GameItemById(1001),1),
                                         new GameItemQuantity(GameItemById(3001),1),
                                                                                 new GameItemQuantity(GameItemById(4001),200)
-
                 },
                 Npcs = new ObservableCollection<Npc>()
                 {
@@ -145,9 +143,8 @@ namespace WpfTheAionProject.DataLayer
                 Message = "This location is not accessible",
                 XCORD = 1,
                 YCORD = 0,
-              
-
             };
+
             gameMap.MapLocation[1, 1] = new Location()
             {
                 id = 11,
@@ -165,10 +162,8 @@ namespace WpfTheAionProject.DataLayer
                 Npcs = new ObservableCollection<Npc>()
                 {
                     NpcById(3001),
-                     NpcById(3002),
-
+                     NpcById(3002)
                 }
-
             };
 
             gameMap.MapLocation[1, 2] = new Location()
@@ -188,10 +183,8 @@ namespace WpfTheAionProject.DataLayer
                 Npcs = new ObservableCollection<Npc>()
                 {
                     NpcById(3001),
-                     NpcById(3003),
-
+                     NpcById(3003)
                 }
-
             };
             gameMap.MapLocation[2, 0] = new Location()
             {
@@ -274,7 +267,6 @@ namespace WpfTheAionProject.DataLayer
                      NpcById(3002),
                      NpcById(3005),
                 }
-
             };
 
             gameMap.MapLocation[3, 1] = new Location()
@@ -376,7 +368,6 @@ namespace WpfTheAionProject.DataLayer
                      NpcById(3002),
                        NpcById(3005)
                 },
-
             };
 
             gameMap.MapLocation[5, 0] = new Location()
@@ -432,7 +423,6 @@ namespace WpfTheAionProject.DataLayer
                      NpcById(3002),
                        NpcById(3004)
                 },
-
             };
 
             gameMap.MapLocation[6, 1] = new Location()
@@ -472,7 +462,6 @@ namespace WpfTheAionProject.DataLayer
                      NpcById(3002),
                        NpcById(3005)
                 },
-
             };
 
             gameMap.MapLocation[7, 0] = new Location()
@@ -538,7 +527,6 @@ namespace WpfTheAionProject.DataLayer
                     NpcById(2014)
                 },
             };
-
             return gameMap;
         }
 
@@ -546,7 +534,7 @@ namespace WpfTheAionProject.DataLayer
         {
             return new List<GameItem>()
             {
-                new Weapon(1001, "Longbow", 1000, 100, 10, "The valyrian steel sword from House Stark. Without this, you do not stand a chance of defeating the night king.", 10),
+                new Weapon(1001, "Longclaw", 1000, 100, 10, "The valyrian steel sword from House Stark. Without this, you do not stand a chance of defeating the night king.", 10),
                 new Weapon(1002, "Stick", 0, 1, 10, "You can find sticks anywhere and use then to fight off weak enemies, but they will break after one fight.", 1),
                 new Weapon(1005, "Needle", 250, 1, 9, "Arya's sword. It is light and versatile, but not made out of valyarian steel. You can use this against people and animals.", 1),
                 new Weapon(1010, "Common sword", 10, 10, 10, "A common sword you can use in battle.", 1),
@@ -560,7 +548,6 @@ namespace WpfTheAionProject.DataLayer
                 new Allies(4004,"Stannis Baratheon Allies",200,"Allies came from Stannis Baratheon",5,"You got Allies from Stannis",Allies.UseActionType.AddXP),
                  new Allies(4005,"Jon Snow Allies",200,"Jon came from Stannis Baratheon",5,"You got Allies from Jon",Allies.UseActionType.AddXP)
             };
-
         }
         public static GameItem GameItemById(int id)
         {

@@ -10,9 +10,6 @@
         Height="600"
         WindowStartupLocation="CenterScreen"
         WindowStyle="SingleBorderWindow">
-
-
-
     <Window.Background>
         <ImageBrush Stretch="Fill" ImageSource="..\Images\background2.jpg"
             AlignmentY="Top" AlignmentX="Center"/>
@@ -124,14 +121,13 @@
             Grid.Column="1"
             Margin="0,0,0,5"
             Style="{StaticResource BorderStyle}">
-                </Border>                
+                </Border>              
                
                 <Grid Grid.Column="1" Grid.Row="0">
 
                     <StackPanel VerticalAlignment="Top" Margin="20">
                     <TextBox Text="Player Setup" Width="200" TextAlignment="Center" Style="{StaticResource MainPanelTextBoxStyle}"/>
                     </StackPanel>
-
                     <StackPanel
                 Orientation="Vertical"
                 HorizontalAlignment="Center"
@@ -188,7 +184,8 @@
                             <Button Content="OK" Name="OkButton" Click="OkButton_Click" Width="180"/>
                         </StackPanel>
                     </StackPanel>
-                </Grid>               
+                </Grid> 
+                
                 <Border
             Grid.Row="1"
             Grid.ColumnSpan="3"
@@ -199,8 +196,7 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                      
+                        </Grid.ColumnDefinitions>                      
                         <Border
                 Grid.Column="1"
                 Margin="0"
@@ -219,8 +215,7 @@
                   VerticalScrollBarVisibility="Auto"
                   VerticalContentAlignment="top"
                   Style="{StaticResource MainPanelTextBoxStyle}"/>
-                        </Border>
-                      
+                        </Border>                      
                     </Grid>
                 </Border>
             </Grid>

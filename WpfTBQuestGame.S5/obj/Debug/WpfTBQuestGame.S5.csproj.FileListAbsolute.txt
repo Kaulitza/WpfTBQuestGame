@@ -1,0 +1,10 @@
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\WpfTBQuestGame.S5.csprojAssemblyReference.cache
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\PresentationLayer\GameSessionView.baml
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\PresentationLayer\PlayerSetupView.baml
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\PresentationLayer\GameSessionView.g.cs
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\PresentationLayer\HelpWindow.g.cs
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\PresentationLayer\MissionStatusView.g.cs
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\PresentationLayer\PlayerSetupView.g.cs
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\App.g.cs
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\WpfTheAionProject_MarkupCompile.cache
+C:\Users\miche\Downloads\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5-master\WpfTBQuestGame.S5\obj\Debug\WpfTheAionProject_MarkupCompile.lref

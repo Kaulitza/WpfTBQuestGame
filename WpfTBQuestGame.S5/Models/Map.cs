@@ -9,7 +9,6 @@ namespace WpfTheAionProject.Models
 {
     public class Map
     {
-
         public Map(int rows, int columns)
         {
             _maxRows = rows;
@@ -21,10 +20,8 @@ namespace WpfTheAionProject.Models
         int _currentLocationCoordinate;
         private List<GameItem> _standardGameItems;
 
-
         Location[,] _mapLocation;
         private GameMapCoordinates _currentLocationCoordinates;
-
 
         public List<GameItem> StandardGameItems
         {
@@ -34,27 +31,7 @@ namespace WpfTheAionProject.Models
         public GameItem GameItemById(int gameItemId)
         {
             return StandardGameItems.FirstOrDefault(i => i.id == gameItemId);
-        }
-        //public string OpenLocationByRelic(int relicid)
-        //{
-        //    string message = "The relic did nothing";
-        //    Location mapLocation = new Location();
-        //    for (int row = 0; row < _maxRows;row++)
-        //    {
-        //        for(int col=0;col<_maxColumns;col++)
-        //        {
-        //            mapLocation = _mapLocation[row, col];
-
-        //            if(mapLocation!=null && mapLocation.RequiredRelicid==relicid)
-        //            {
-        //                mapLocation.accessible = true;
-        //                message = $"{mapLocation.name} is now accessible";
-        //            }
-        //        }
-        //    }
-        //    return message;
-        //}
-       
+        }  
 
         public Location[,] MapLocation
         {
@@ -80,7 +57,6 @@ namespace WpfTheAionProject.Models
             set { _locations = value; }
         }
 
-
         public Location CurrentLocation
         {
             get { return _mapLocation[_currentLocationCoordinates.Row, _currentLocationCoordinates.Column]; }
@@ -101,7 +77,6 @@ namespace WpfTheAionProject.Models
                 return accessibleLocations;
             }
         }
-
         public List<string> AccessibleLocationsNames
         {
             get
@@ -206,7 +181,6 @@ namespace WpfTheAionProject.Models
                     eastLocation = nextEastLocation;
                 }
             }
-
             return eastLocation;
         }
 
@@ -232,7 +206,6 @@ namespace WpfTheAionProject.Models
                     southLocation = nextSouthLocation;
                 }
             }
-
             return southLocation;
         }
 
@@ -258,7 +231,6 @@ namespace WpfTheAionProject.Models
                     westLocation = nextWestLocation;
                 }
             }
-
             return westLocation;
         }
     }

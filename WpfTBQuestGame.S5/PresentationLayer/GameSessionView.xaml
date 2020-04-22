@@ -172,6 +172,7 @@
                                         </DataGrid.Columns>
                                     </DataGrid>
                                 </TabItem>
+
                                 <TabItem x:Name="TreasureTabItem" Header="Treasure">
                                     <DataGrid x:Name="TreasureDataGrid"       
                                               ItemsSource="{Binding Player.Treasures}"
@@ -194,6 +195,7 @@
                                         </DataGrid.Columns>
                                     </DataGrid>
                                 </TabItem>
+
                                 <TabItem x:Name="PotionsTabItem" Header="Potions">
                                     <DataGrid x:Name="PotionsDataGrid"       
                                               ItemsSource="{Binding Player.Potions}"
@@ -216,6 +218,7 @@
                                         </DataGrid.Columns>
                                     </DataGrid>
                                 </TabItem>
+
                                 <TabItem x:Name="AlliesTabItem" Header="Allies">
                                     <DataGrid x:Name="AlliesDataGrid"       
                                               ItemsSource="{Binding Player.Allies}"
@@ -256,6 +259,7 @@
                                 Style="{StaticResource MainPanelButtonStyle}" 
                                 Click="SpeakToButton_Click"/>
                         </StackPanel>
+                        
                         <StackPanel Margin="0,220,0,0">
                             <TabControl 
                                     x:Name="LocationInfoTabControl"
@@ -289,6 +293,7 @@
                                         </DataGrid.Columns>
                                     </DataGrid>
                                 </TabItem>
+
                                 <TabItem Header="NPCs"
                                         x:Name="NpcsInfoTabItem">
                                     <DataGrid 
@@ -314,7 +319,7 @@
                                     </DataGrid>
                                 </TabItem>
                             </TabControl>
-                        </StackPanel>                    
+                        </StackPanel>                                          
                     </Grid>
                 </Border>
                 <Grid>
@@ -323,7 +328,6 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Margin="0">
-                       
                         <StackPanel
                   Orientation="Horizontal"
                   HorizontalAlignment="Right"
@@ -344,7 +348,7 @@
                             Margin="10">
                             <Label Content="Army Name" Style="{StaticResource MainPanelLabelStyle}"/>
                             <TextBox Name="ArmyNameTextbox" Text="{Binding Player.Army,Mode=OneWay}" Style="{StaticResource MainPanelTextBoxStyle}"/>
-                        </StackPanel>
+                         </StackPanel>
                         <StackPanel
                   Orientation="Horizontal"
                   HorizontalAlignment="Right"
@@ -401,7 +405,7 @@
                             HorizontalAlignment="Center"
                             Style="{StaticResource MainPanelLabelStyle}"/>
                                 <TextBox Name="CurrentLocationName" Text="{Binding CurrentLocationName, Mode=OneWay}" Width="auto" Style="{StaticResource MainPanelTextBoxStyle}"/>
-                            </StackPanel>
+                            </StackPanel>                    
                             <StackPanel
                   Orientation="Horizontal"
                   HorizontalAlignment="Center"
@@ -432,6 +436,7 @@
                                 <TextBox Width="100" Name="NorthLocation" Text="{Binding NorthLocation.name, Mode=OneWay}" 
                                     Visibility="{Binding HasNorthLocation, Converter={StaticResource BooleanToVisibility}}" Margin="5,0,5,0" Style="{StaticResource MainPanelTextBoxStyle}"/>
                             </StackPanel>
+
                             <StackPanel
                   Orientation="Horizontal"
                   HorizontalAlignment="Right"
@@ -462,7 +467,7 @@
                   Height="auto"
                   Width="auto"
                   Margin="10"
-                                    Name="locationInfo"
+                  Name="locationInfo"
                   Background="WhiteSmoke"
                   BorderThickness="0"
                   TextWrapping="Wrap"
@@ -491,7 +496,6 @@
                             <Button Content="HELP" Name="HelpButton" Margin="10" Width="100" Click="HelpButton_Click" />
                             <Button Content="SAVE" Name="SaveButton" Margin="10" Width="100"/>
                             <Button Content="QUIT" Name="QuitButton" Margin="10" Width="100" Click="QuitButton_Click"/>
-
                         </StackPanel>
                         <Border
                 Grid.Column="1"
@@ -512,7 +516,6 @@
                   VerticalContentAlignment="top"
                   Style="{StaticResource MainPanelTextBoxStyle}"/>
                         </Border>
-
                         <StackPanel
                 Grid.Column="2"
                 Orientation="Vertical"

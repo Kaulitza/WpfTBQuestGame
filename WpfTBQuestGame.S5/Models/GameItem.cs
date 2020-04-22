@@ -16,8 +16,7 @@
         {
             get { return InformationString(); }
         }
-
-
+        
         public GameItem(int _id,string name,int value,string description,int exriencePoints,string useMessage="")
         {
             id = _id;

@@ -22,7 +22,6 @@ namespace WpfTheAionProject.PresentationLayer
                 OnPropertyChanged(nameof(_missionInformation));
             }
         }
-
         public List<Mission> Missions
         {
             get { return _missions; }
